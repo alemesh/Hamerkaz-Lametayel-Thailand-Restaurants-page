@@ -42,7 +42,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: $default-font
+	font-family: "VarelaRound-Regular"
 	overflow-x: hidden
 
 .img-responsive
@@ -69,31 +69,170 @@ body
 h1, h2, h3, h4, p, span
 	margin: 0 auto
 	padding: 0 auto
+	text-decoration: none
+	font-weight: normal
+
+.main-holder
+	overflow: hidden
+	max-width: 1370px
+	margin: 0 auto
+	padding: 0 35px
+	position: relative
+
+//====================== header section ======================
 
 .hlt-header
 	width: 100%
 	min-height: 695px
 	position: relative
 	direction: rtl
+	background-repeat: no-repeat
+	background-size: cover
 	.htl-text
 		color: white
-		width: 50%
+		width: 55%
 		font-family: "VarelaRound-Regular"
-		line-height: 1.467
-		p
+		line-height: 1.15
+		margin: 262px 36px 0
+		.htl-description
+			font-size: 49px
+		.htl-title
+			font-size: 72px
+			padding: 0 75px 0 0
+			font-weight: normal
+
+//================== second section ========================
+
+.htl-second-section
+	width: 100%
+	min-height: 714px
+	position: relative
+	background-repeat: no-repeat
+	background-size: cover
+	.main-holder
+		//min-height: 714px
+		//display: flex
+		//flex-direction: column
+		//justify-content: space-between
+		//align-items: center
+
+.sec-head-text
+	text-align: center
+	margin: 80px 0 80px 0
+	direction: rtl
+	h3
+		font-size: 29px
+		font-family: "VarelaRound-Regular"
+		color: rgb(243, 185, 64)
+		line-height: 1.2
+		margin: 0 0 15px 0
+		font-weight: normal
+	p
+		display: inline-block
+		width: 55%
+		font-size: 21px
+		color: rgb(70, 70, 70)
+		line-height: 1.2
+		font-family: "almoni-dl-aaa-regular"
+	.mobile
+		display: none
+.sec-list
+	position: relative
+	margin: 0 auto
+	max-width: 80%
+	ul
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		padding: 0
+		text-align: center
+		list-style: none
+		//margin: 0 -70px
+		li
+			direction: rtl
+			position: relative
+			//text-align: center
+			//direction: rtl
+			//padding: 0 42px
+			padding: 0
+			//width: 16.6%
+			width: 25%
+			font-size: 24px
+			font-family: "VarelaRound-Regular"
+			color: rgb(70, 70, 70)
+			line-height: 1.2
+		.item-list-img
+			background-image: url(../img/pointer.png)
+			width: 40px
+			height: 53px
+			display: block
+			margin-bottom: 15px
+
+.sec-footer-text
+	text-align: center
+	margin: 170px 50px 20px
+	direction: rtl
+	h3
+		font-size: 32px
+		font-family: "VarelaRound-Regular"
+		color: rgb(243, 185, 64)
+		line-height: 1.2
+
+//============ map section ============================
+
+.htl-map-section
+	position: relative
+	width: 100%
+	min-height: 433px
+	display: flex
+	//justify-content: space-around
+	.g-map
+		width: 50%
+		min-height: 433px
+		background-image: url(../img/map.png)
+		background-size: cover
+	.address-block
+		width: 50%
+		min-height: 433px
+		background: #093959
+	ul
+		min-height: 70px
+		color: #3a6b8b
+		background: #09273b
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		padding: 0
+		text-align: center
+		list-style: none
+		align-items: center
+		direction: rtl
+		li
+			width: 25%
+			display: flex
+			align-items: center
+			height: 70px
 			font-size: 30px
-		h1
-			font-size: 42px
+			font-family: "almoni-dl-aaa-bold"
+			color: rgb(58, 107, 139)
+			font-weight: bold
+			line-height: 1.2
+			a
+				margin: 0 auto
+				text-decoration: none
 
+		.active
+			background: #093959
+			color: white
 
+	.address-item
+		color: white
 
-
-
-
-
-
-
-
+	.tabs__content
+		display: none
+	.tabs__content.active
+		display: block
 
 
 
