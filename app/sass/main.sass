@@ -78,7 +78,10 @@ h1, h2, h3, h4, p, span
 	margin: 0 auto
 	padding: 0 35px
 	position: relative
-
+.button
+	display: flex
+	justify-content: center
+	align-items: center
 //====================== header section ======================
 
 .hlt-header
@@ -191,10 +194,13 @@ h1, h2, h3, h4, p, span
 		min-height: 433px
 		background-image: url(../img/map.png)
 		background-size: cover
+		background-repeat: no-repeat
 	.address-block
 		width: 50%
 		min-height: 433px
 		background: #093959
+		position: relative
+		direction: rtl
 	ul
 		min-height: 70px
 		color: #3a6b8b
@@ -218,13 +224,22 @@ h1, h2, h3, h4, p, span
 			color: rgb(58, 107, 139)
 			font-weight: bold
 			line-height: 1.2
-			a
+			span
 				margin: 0 auto
 				text-decoration: none
+				cursor: pointer
+				color: #305c79
+				&:hover
+					color: #2e6a91
+					transition: all 0.8s ease
+
 
 		.active
 			background: #093959
 			color: white
+			a
+				color: white
+
 
 	.address-item
 		color: white
@@ -234,6 +249,192 @@ h1, h2, h3, h4, p, span
 	.tabs__content.active
 		display: block
 
+	.address-item
+		position: relative
+		width: 60%
+		margin: 40px 40px 0 0
+		line-height: 1.48
+		h3
+			font-family: "almoni-dl-aaa-black"
+			font-size: 30px
+			color: #f3b940
+		p
+			font-family: "almoni-dl-aaa-bold"
+			font-size: 25px
+		.he
+			font-family: "Tahoma-Regular-font"
+	.button-section
+		display: flex
+		.button
+			width: 180px
+			height: 45px
+			background: #f3b940
+			margin: 30px 0 0 20px
+			text-decoration: none
+			color: rgb(9, 57, 89)
+			font-size: 25px
+			font-family: "almoni-dl-aaa-bold"
+			&:hover
+				text-decoration: none
+				color: rgb(9, 57, 89)
+				background: #d8a02c
+				transition: all 0.8s ease
+
+//====================== Menu section ==================================
+
+.htl-menu-section
+	position: relative
+	width: 100%
+	min-height: 555px
+	background-size: cover
+	text-align: center
+	direction: rtl
+	.wrap-section
+		margin: 130px 0 0 0
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+
+	h3
+		font-size: 30px
+		font-family: "VarelaRound-Regular"
+		color: rgb(243, 185, 64)
+		line-height: 1.2
+	.description
+		width: 48%
+		margin: 30px 0 40px
+	p
+		font-size: 20px
+		font-family: "almoni-dl-aaa-regular"
+		color: rgb(70, 70, 70)
+		line-height: 1.2
+	.buttons-menu
+		display: flex
+		justify-content: center
+	.button
+		width: 370px
+		height: 80px
+		background: #f3b940
+		margin: 15px
+		font-size: 30px
+		font-family: "almoni-dl-aaa-black"
+		color: rgb(255, 255, 255)
+		line-height: 1.2
+		&:hover
+			text-decoration: none
+			background: #d29006
+			transition: all 0.8s ease
+	.footer-section
+		font-size: 30px
+		font-family: "VarelaRound-Regular"
+		color: rgb(243, 185, 64)
+		line-height: 1.2
+		margin: 80px 0 20px
+
+//=============================== Slider section ======================
+
+.htl-slider-section
+	position: relative
+	width: 100%
+	min-height: 260px
+	background: #666666
+
+
+//============================== Contact form ==========================
+
+.htl-contactform-section
+	position: relative
+	width: 100%
+	min-height: 410px
+	background: white
+	background-image: url(../img/bacground-contactform-section.png)
+	background-position: bottom
+	background-repeat: no-repeat
+	text-align: center
+
+	h3
+		font-size: 30px
+		font-family: "VarelaRound-Regular"
+		color: rgb(243, 185, 64)
+		line-height: 1.2
+		display: inline-block
+		margin: 80px 0 15px
+		direction: rtl
+	p
+		font-size: 20px
+		font-family: "almoni-dl-aaa-regular"
+		color: rgb(70, 70, 70)
+		line-height: 1.2
+		direction: rtl
+
+	.contact-form
+		margin: 40px 0 0 0
+	.form
+		max-width: 1270px
+		margin: 0 auto
+		position: relative
+	.form-row-wrap
+		direction: rtl
+		display: flex
+		//flex-direction: row
+		justify-content: center
+		flex-wrap: wrap
+		margin: 0 -8px
+		//margin: 0 -12px
+		transition: opacity 0.2s ease-in-out
+
+	.form-row
+		width: 24%
+		//padding: 0 8px
+		//padding: 0 12px
+		margin: 0 4px
+		border: 1px solid #b7b7b7
+
+	.form-control
+		background: transparent
+		padding: 10px
+		direction: rtl
+		display: block
+		width: 100%
+		height: 60px
+		color: rgb(167, 169, 172)
+		border: none
+		font-size: 24px
+		font-family: "almoni-dl-aaa-regular"
+		line-height: 1.2
+		text-decoration: none
+		transition: all .2s ease
+		&::placeholder
+			color: #cccccc
+		&:hover
+			//background-color: #fffff5
+			//border-top: 2px solid #b7b7b7
+			text-decoration: none
+			//color: #111
+
+	.btn
+		position: relative
+		background: transparent
+		font-family: "almoni-dl-aaa-black"
+		color: white
+		text-align: center
+		height: 60px
+		border: none
+		outline: none
+		display: block
+		width: 100%
+		line-height: 1.2
+		//width: 250px
+		font-size: 30px
+		text-decoration: none
+	.form-row.button
+		background: #f3b940
+		border: none
+		&:hover
+			text-decoration: none
+			background: #d29006
+			transition: all 0.8s ease
 
 
 
