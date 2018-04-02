@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Hamerkaz Lametayel Thailand</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,15 +20,18 @@
 	<meta name="msapplication-navbutton-color" content="#000">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-
+	<!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>-->
+	<!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>-->
 	<link rel="stylesheet" href="css/main.min.css">
 
 
 
 	<!-- Add the slick-theme.css if you want default styling -->
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+
+	<!--<link rel="stylesheet" href="libs/slick-master/slick/slick.css">-->
+	<!--<script src="libs/slick-master/slick/slick.js"></script>-->
 	<!-- Add the slick-theme.css if you want default styling -->
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+	<!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>-->
 </head>
 
 <body>
@@ -73,59 +76,65 @@
 
 	<div class="htl-map-section">
 		<div class="g-map">
-
+			<!--<div id="map"></div>-->
 		</div>
 		<div class="address-block tabs">
 			<div class="menu-lisy">
-				<!--<ul class="tabs__caption">-->
-					<!--<li class="active"><a href="#content-one" id="one-tab">בנגקוק</a></li>-->
-					<!--<li><a href="#content-two" id="two-tab">מסעדת אטיקה </a></li>-->
-					<!--<li><a href="#content-three" id="one-three">קוסמוי</a></li>-->
-					<!--<li><a href="#content-four" id="one-four">צ’אנג מאי</a></li>-->
-				<!--</ul>-->
-				<ul class="tabs__caption">
-					<li class="active"><span>בנגקוק</span></li>
-					<li><span>מסעדת אטיקה </span></li>
-					<li><span>קוסמוי</span></li>
-					<li><span>צ’אנג מאי</span></li>
-				</ul>
+				<a class="toggle-mnu"><span></span></a>
+				<div class="togle-title"></div>
+				<div class="wrqap-menu">
+					<ul class="tabs__caption">
+						<li class="active" data-lat="13.762134" data-lng="100.494070"><span>בנגקוק</span></li>
+						<li data-lat="9.532535" data-lng="100.062560"><span>מסעדת אטיקה </span></li>
+						<li data-lat="13.753554" data-lng="100.546656"><span>קוסמוי</span></li>
+						<li data-lat="18.782025" data-lng="99.003468"><span>צ’אנג מאי</span></li>
+					</ul>
+				</div>
+
+
 			</div>
-			<div class="address-item tabs__content active">
-				<h3>מסעדת המרכז למטייל בקווסאן</h3>
-				<p class="en">45 CHARKRAPONG RD. CHANASONGKRAM  PRANAKORN BANGKOK THAILAND 10200</p>
-				<p class="he">45 ถ. จักพงษ์ แขวงชนะสงคราม เขต พระนคร กทม 10200</p>
-				<div class="button-section">
-					<a class="button" href="tel:+6602-2822774"><span>חייג למסעדה</span></a>
-					<a class="button" href="mailto:bkk@lametayel-thailand.com"><span>הזמנת מקום</span></a>
+			<div class="wrap-mobile">
+				<div class="g-map-mobile">
+
+				</div>
+				<div class="address-item tabs__content active">
+					<h3>מסעדת המרכז למטייל בקווסאן</h3>
+					<p class="en">45 CHARKRAPONG RD. CHANASONGKRAM  PRANAKORN BANGKOK THAILAND 10200</p>
+					<p class="he">45 ถ. จักพงษ์ แขวงชนะสงคราม เขต พระนคร กทม 10200</p>
+					<div class="button-section">
+						<a class="button" href="tel:+6602-2822774"><span>חייג למסעדה</span></a>
+						<a class="button" href="mailto:bkk@lametayel-thailand.com"><span>הזמנת מקום</span></a>
+					</div>
+				</div>
+				<div class="address-item tabs__content">
+					<h3>מסעדת המרכז למטייל סניף קוסמוי </h3>
+					<p class="en">156/16 Moo 2 T. Buphot, Koh Samui, Suratthani 84320</p>
+					<p class="he">156/16 หมู่ 2 ต.บ่อผุด อ.เกาะสมุย จ.สุราษฎร์ธานี 84320</p>
+					<div class="button-section">
+						<a class="button" href="tel:077-256206"><span>חייג למסעדה</span></a>
+						<a class="button" href="mailto:chaweng@lametayel-thailand.com"><span>הזמנת מקום</span></a>
+					</div>
+				</div>
+				<div class="address-item tabs__content">
+					<h3>מסעדת אטיקה במלון איסטין מקאסאן</h3>
+					<p class="en">1091/343 NEW PETCHBURI RD. MAKKASAN RAJTHEVEE BANGKOK THAILAND 10400</p>
+					<p class="he">ชั้น 23 ร้านอาหาร แอทติกา  โรงแรม อิสตินมักกะสัน ถ.เพชรบุรี เขต ราชเทวี กทม 10400</p>
+					<div class="button-section">
+						<a class="button" href="tel:"><span>חייג למסעדה</span></a>
+						<a class="button" href="mailto:"><span>הזמנת מקום</span></a>
+					</div>
+				</div>
+				<div class="address-item tabs__content">
+					<h3>המרכז למטייל צ’אנג מאי</h3>
+					<p class="en">ADDRESS 86/1 SRIDONCHAI ROAD CHANGKLAN MUANG  CHIANGMAI 50100</p>
+					<p class="he"> 86/1 ถนนศรีดอนไชย ตำบลช้างคลาน อำเภอเมือง เชียงใหม่ 50100 ( ตรงข้ามพันทิปพลาซ่าเชียงใหม่ )</p>
+					<div class="button-section">
+						<a class="button" href="tel:053-235615"><span>חייג למסעדה</span></a>
+						<a class="button" href="mailto:cnx@lametayel-thailand.com"><span>הזמנת מקום</span></a>
+					</div>
 				</div>
 			</div>
-			<div class="address-item tabs__content">
-				<h3>מסעדת המרכז למטייל סניף קוסמוי </h3>
-				<p class="en">156/16 Moo 2 T. Buphot, Koh Samui, Suratthani 84320</p>
-				<p class="he">156/16 หมู่ 2 ต.บ่อผุด อ.เกาะสมุย จ.สุราษฎร์ธานี 84320</p>
-				<div class="button-section">
-					<a class="button" href="tel:077-256206"><span>חייג למסעדה</span></a>
-					<a class="button" href="mailto:chaweng@lametayel-thailand.com"><span>הזמנת מקום</span></a>
-				</div>
-			</div>
-			<div class="address-item tabs__content">
-				<h3>מסעדת אטיקה במלון איסטין מקאסאן</h3>
-				<p class="en">1091/343 NEW PETCHBURI RD. MAKKASAN RAJTHEVEE BANGKOK THAILAND 10400</p>
-				<p class="he">ชั้น 23 ร้านอาหาร แอทติกา  โรงแรม อิสตินมักกะสัน ถ.เพชรบุรี เขต ราชเทวี กทม 10400</p>
-				<div class="button-section">
-					<a class="button" href="tel:"><span>חייג למסעדה</span></a>
-					<a class="button" href="mailto:"><span>הזמנת מקום</span></a>
-				</div>
-			</div>
-			<div class="address-item tabs__content">
-				<h3>המרכז למטייל צ’אנג מאי</h3>
-				<p class="en">ADDRESS 86/1 SRIDONCHAI ROAD CHANGKLAN MUANG  CHIANGMAI 50100</p>
-				<p class="he"> 86/1 ถนนศรีดอนไชย ตำบลช้างคลาน อำเภอเมือง เชียงใหม่ 50100 ( ตรงข้ามพันทิปพลาซ่าเชียงใหม่ )</p>
-				<div class="button-section">
-					<a class="button" href="tel:053-235615"><span>חייג למסעדה</span></a>
-					<a class="button" href="mailto:cnx@lametayel-thailand.com"><span>הזמנת מקום</span></a>
-				</div>
-			</div>
+
 		</div>
 	</div>
 	<div class="htl-menu-section" style="background-image: url(img/background-fourtch-section2.png)">
@@ -139,7 +148,7 @@
 				</div>
 				<div class="buttons-menu">
 					<a class="button" href="#"><span>תפריט ראשי</span></a>
-					<a class="button" href="#"><span>תפריט ילדים</span></a>
+					<a class="button" href="img/Lametayel-Kids-Menu.pdf" download><span>תפריט ילדים</span></a>
 				</div>
 			</div>
 			<div class="footer-section">
@@ -150,21 +159,38 @@
 	</div>
 	<div class="htl-slider-section">
 		<div class="wrap-section">
+			<!--<div class="variable-width">-->
+				<!--<div class="item" style="background-image: url(img/_MG_9418.jpg)">-->
+					<!--&lt;!&ndash;<img src="img/_MG_9418.jpg"alt="#">&ndash;&gt;-->
+				<!--</div>-->
+				<!--<div class="item" style="background-image: url(img/_MG_9440.jpg)">-->
+					<!--&lt;!&ndash;<img src="img/_MG_9440.jpg"alt="#">&ndash;&gt;-->
+				<!--</div>-->
+				<!--<div class="item" style="background-image: url(img/_MG_9976.jpg)">-->
+					<!--&lt;!&ndash;<img src="img/_MG_9976.jpg"alt="#">&ndash;&gt;-->
+				<!--</div>-->
+				<!--<div class="item" style="background-image: url(img/_MG_9523.jpg)">-->
+					<!--&lt;!&ndash;<img src="img/_MG_9523.jpg"alt="#">&ndash;&gt;-->
+				<!--</div>-->
+				<!--<div class="item" style="background-image: url(img/IMG_0462.JPG)">-->
+					<!--&lt;!&ndash;<img src="img/IMG_0462.JPG"alt="#">&ndash;&gt;-->
+				<!--</div>-->
+			<!--</div>-->
 			<div class="variable-width">
-				<div class="item" style="background-image: url(img/_MG_9418.jpg)">
-					<!--<img src="img/_MG_9418.jpg"alt="#">-->
+				<div class="item">
+					<img src="img/_MG_9440-min.jpg"alt="#">
 				</div>
-				<div class="item" style="background-image: url(img/_MG_9440.jpg)">
-					<!--<img src="img/_MG_9440.jpg"alt="#">-->
+				<div class="item">
+					<img src="img/IMG_0462-min.jpg"alt="#">
 				</div>
-				<div class="item" style="background-image: url(img/_MG_9976.jpg)">
-					<!--<img src="img/_MG_9976.jpg"alt="#">-->
+				<div class="item">
+					<img src="img/_MG_9976-min.jpg"alt="#">
 				</div>
-				<div class="item" style="background-image: url(img/_MG_9523.jpg)">
-					<!--<img src="img/_MG_9523.jpg"alt="#">-->
+				<div class="item">
+					<img src="img/_MG_9418-min.jpg"alt="#">
 				</div>
-				<div class="item" style="background-image: url(img/IMG_0462.JPG)">
-					<!--<img src="img/IMG_0462.JPG"alt="#">-->
+				<div class="item">
+					<img src="img/_MG_9523-min.jpg"alt="#">
 				</div>
 			</div>
 		</div>
@@ -201,8 +227,11 @@
 
 
 </div>
-
+<!--AIzaSyAW6GlD57glHFIOUZGbgUmqv06BJyW2q3o-->
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 	<script src="js/scripts.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<!--<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW6GlD57glHFIOUZGbgUmqv06BJyW2q3o&callback=initMap" async defer></script>
+
 </body>
 </html>

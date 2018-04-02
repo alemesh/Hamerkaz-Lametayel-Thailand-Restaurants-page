@@ -185,16 +185,39 @@
       <workItem from="1522163999256" duration="2154000" />
       <workItem from="1522249951593" duration="1924000" />
       <workItem from="1522305893361" duration="20391000" />
+<<<<<<< HEAD
+      <workItem from="1522392768131" duration="23476000" />
+=======
       <workItem from="1522392768131" duration="22881000" />
+<<<<<<< HEAD
       <workItem from="1522588107933" duration="3115000" />
+=======
+      <workItem from="1522588107933" duration="3035000" />
+>>>>>>> 30a26334e641fe66b8f9fdd8d6cbcb988696c2dc
+>>>>>>> e20d9f1b80778662018c9dea212fdaa87c69e70d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="50465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="47945000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="50385000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+>>>>>>> 30a26334e641fe66b8f9fdd8d6cbcb988696c2dc
+>>>>>>> e20d9f1b80778662018c9dea212fdaa87c69e70d
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1640625" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
