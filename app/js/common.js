@@ -37,7 +37,8 @@ $(function() {
     checkLocationOnLoad();
 
     $(".toggle-mnu").click(function() {
-        $(".tabs__caption").slideToggle();
+        // $(".tabs__caption").slideToggle();
+        $(".menu-lisy").toggleClass('menu-active');
         // return false;
     });
 });
@@ -46,6 +47,9 @@ $(function() {
     if ($(window).width() < 901) {
         $(".g-map-mobile").append("<div id='map'></div>");
         $(".g-map div").remove();
+
+
+        $('.togle-title').html($('.tabs__caption .active').html());
 
         $('.tabs__caption').on('click', 'li', function () {
             var togleTitle = $(this).html();
