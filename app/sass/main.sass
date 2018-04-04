@@ -231,19 +231,24 @@ h1, h2, h3, h4, p, span
 			color: rgb(58, 107, 139)
 			font-weight: bold
 			line-height: 1.2
+			&:hover
+				//background: #2e6a91
+				//background: #113352
+				background: #113352
+				transition: all 0.8s ease
 			span
 				margin: 0 auto
 				text-decoration: none
 				cursor: pointer
 				color: #305c79
-				&:hover
-					color: #2e6a91
-					transition: all 0.8s ease
+
 
 
 		.active
 			background: #093959
 			color: white
+			span
+				color: white
 			a
 				color: white
 	.menu-lisy

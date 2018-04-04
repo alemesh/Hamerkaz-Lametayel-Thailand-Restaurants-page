@@ -54,7 +54,24 @@ $(function() {
     } else {
         $(".g-map").append("<div id='map'></div>");
         $(".g-map-mobile div").remove();
+
+        $('.togle-title').html();
     }
+
+$( window ).resize(function() {
+    if ($(window).width() < 901) {
+        $(".g-map-mobile").append("<div id='map'></div>");
+        $(".g-map div").remove();
+        $('.togle-title').html($('.tabs__caption .active').html());
+        checkLocationOnLoad()
+    } else {
+        $(".g-map").append("<div id='map'></div>");
+        $(".g-map-mobile div").remove();
+        $('.togle-title').html('');
+        checkLocationOnLoad()
+    }
+
+});
 
 
 // google maps settings
