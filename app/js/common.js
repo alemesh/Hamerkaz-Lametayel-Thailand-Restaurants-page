@@ -27,13 +27,19 @@ $(function() {
             });
     })(jQuery);
 
-    //google map init
-    checkLocationOnLoad();
 
-    $(".toggle-mnu").click(function() {
+    // $(".toggle-mnu").click(function() {
+    $(".menu-lisy").click(function() {
         // $(".tabs__caption").slideToggle();
         $(".menu-lisy").toggleClass('menu-active');
     });
+    //google map init
+    checkLocationOnLoad();
+
+    // $(".toggle-mnu").click(function() {
+    //     // $(".tabs__caption").slideToggle();
+    //     $(".menu-lisy").toggleClass('menu-active');
+    // });
 });
 
 
@@ -55,7 +61,8 @@ $(function() {
         $(".g-map").append("<div id='map'></div>");
         $(".g-map-mobile div").remove();
 
-        $('.togle-title').html();
+        // $('.togle-title').html();
+        $('.togle-title').hide();
     }
 
 $( window ).resize(function() {
@@ -67,7 +74,8 @@ $( window ).resize(function() {
     } else {
         $(".g-map").append("<div id='map'></div>");
         $(".g-map-mobile div").remove();
-        $('.togle-title').html('');
+        // $('.togle-title').html('');
+        $('.togle-title').hide();
         checkLocationOnLoad()
     }
 

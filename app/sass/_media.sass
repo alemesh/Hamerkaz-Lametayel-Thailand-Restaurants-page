@@ -146,11 +146,12 @@
         position: absolute
         left: 0
         top: 100%
-        min-width: 215px
+        //min-width: 215px
+        min-width: 100%
         min-height: 195px
         opacity: 0.9
         z-index: 98
-        transform: translateX(-100%)
+        transform: translateY(-100%)
         transition: transform .3s ease-in-out
         li
           width: 100%
@@ -160,6 +161,7 @@
             background: #666666
           span
             color: white
+            margin-right: 15px
 
 
 
@@ -169,6 +171,8 @@
           transform: none
       .menu-lisy
         position: relative
+        //background: black
+        //z-index: 100
 
         .toggle-mnu
           //display: none
@@ -181,7 +185,7 @@
           height: 46px
           text-align: center
           line-height: 48px
-          z-index: 99
+          z-index: 100
           background: #f3b940
           span
             color: white
@@ -200,11 +204,13 @@
           position: absolute
           right: 0
           top: 0
+          left: 0
+          padding-left: 56px
+          background: #093959
           min-width: 250px
           height: 46px
           line-height: 48px
           z-index: 99
-          background: transparent
           color: white
           span
             align-items: center

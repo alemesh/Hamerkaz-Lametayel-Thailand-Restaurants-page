@@ -4,7 +4,7 @@
 $senderName = 'הצטרפות למועדון הלקוחות';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = ['ravit@gofmans.co.il'];
+$targetEmail = ['ravit@gofmans.co.il', 'ori@gofmans.co.il'];
 //$targetEmail = ['alemesh@acceptic.com'];
 
 
