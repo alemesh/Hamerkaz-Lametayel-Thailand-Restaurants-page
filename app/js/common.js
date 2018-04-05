@@ -138,5 +138,33 @@ function initMap() {
 }
 
 
+/* Article FructCode.com */
+$( document ).ready(function() {
+    $("#ajax_form").submit(
+        function(){
+            sendAjaxForm('result_form', 'ajax_form', 'action_ajax_form.php');
+            return false;
+        }
+    );
+});
+function sendAjaxForm(result_form, ajax_form, url) {
+    $.ajax({
+        url:     url, //url страницы (action_ajax_form.php)
+        type:     "POST", //метод отправки
+        dataType: "html", //формат данных
+        data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
+        success: function(response) { //Данные отправлены успешно
+            result = $.parseJSON(response);
+            // $('.succes-nsg').html('Имя: '+result.name+'<br>Телефон: '+result.tel+'<br>Email: '+result.email);
 
 
+
+            $(".contact-form").hide(300);
+            $(".succes-nsg").show(500);
+        },
+        error: function(response) { // Данные не отправлены
+            $('.succes-nsg').html('Error');
+            $(".succes-nsg").show(500);
+        }
+    });
+}

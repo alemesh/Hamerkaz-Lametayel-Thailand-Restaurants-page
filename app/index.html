@@ -192,8 +192,12 @@
 		<div class="main-holder">
 			<h3>אפשר להציע לכם חברות?</h3>
 			<p>הצטרפו למועדון הלקוחות שלנו, ותוכלו להנות מ-10% הנחה בכל ארוחה ומגוון הטבות נוספות</p>
+			<div class="succes-nsg" hidden>
+				<h3 class="desc"><span>תודה!</span> פרטיך התקבלו בהצלחה.</h3>
+				<h3 class="mob"><span>תודה!</span><br> פרטיך התקבלו בהצלחה.</h3>
+			</div>
 			<div class="contact-form">
-				<form action="form_processing.php" class="form form-validation" method="post">
+				<form action="" id="ajax_form" class="form form-validation" method="post">
 					<div class="form-row-wrap">
 						<div class="form-row form-grow-1">
 								<input name="name" class="form-control" required data-required="true" type="text"  placeholder="*שם מלא">
@@ -205,7 +209,8 @@
 								<input name="email" required class="form-control" type="email" placeholder="*דוא”ל">
 						</div>
 						<div class="form-row button form-grow-5">
-								<button type="submit" class="btn"><span class="btn-txt">צרפו אותנו </span></button>
+								<!--<button type="submit" id="btn" class="btn"><span class="btn-txt">צרפו אותנו </span></button>-->
+								<input type="submit" id="btn" class="btn" value="צרפו אותנו "/>
 						</div>
 					</div>
 				</form>
